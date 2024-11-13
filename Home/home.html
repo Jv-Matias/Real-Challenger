@@ -1,67 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-
-    <!-- CSS para estilização da página -->
+    <title>Portal do Aluno</title>
     <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
-   
-    <!-- Barra de perfil do usuário -->
+
     <div class="barra-perfil">
         <div class="perfil">
-            <!-- Imagem do perfil do usuário -->
-            <img src="../Images/perfil.png" alt="Perfil">
+            <img src="/Images/perfil.png" alt="Perfil do Aluno">
         </div>
-
         <div class="texto-perfil">
-            <!-- Informações do usuário -->
-            Aluno: Joao Vitor <br> Ra: e3000b
+            <!-- O nome e RA do usuário serão inseridos aqui pelo JavaScript -->
         </div>
-        
-        <!-- Botão de sair com ícone -->
-        <button class="sair">Sair
-            <img src="../Images/exit_2.png" alt="Sair">
-        </button>
+        <div class="logout-container">
+            <button id="logoutButton" class="sair" title="Sair">
+                Sair
+                <img src="../images/exit_2.png" alt="Sair">
+            </button>
+        </div>
     </div>
+    
+    
 
-    <!-- Corpo principal da página -->
     <div class="CorpoPrincipal">
 
-        <!-- Caixa com seções/botões de navegação -->
         <div class="CaixaBalaoes">
-
-            <!-- Link para a página de Avaliação -->
             <a class="Botao" href="../Avaliacao/Avaliacao.html">
                 <h2>Avaliação</h2>
-                <h3>Local disponibilizado para que você possa agendar sua avaliação
+                <h3>Local disponibilizado para que você possa agendar sua Avaliação<br>
                     e verificar seus acertos e erros nas questões</h3>
                 <img src="../Images/layers.png" alt="Ícone de Avaliação">
             </a>
 
-            <!-- Link para a página de Contatos -->
             <a class="Botao" href="../Contatos/Contatos.html">
                 <h2>Contatos</h2>
-                <h3>Local onde você consegue encontrar a localização, contatos
+                <h3>Local onde você consegue encontrar a localização, contatos<br>
                     e outros dados importantes sobre nossos polos</h3>
                 <img src="../Images/phone.png" alt="Ícone de Contato">
             </a>
 
-            <!-- Link para a página de Boletim -->
             <a class="Botao" href="../Boletim/Boletim.html">
                 <h2>Boletim</h2>
-                <h3>Local onde você consegue encontrar seu boletim, notas e outros dados
+                <h3>Local onde você consegue encontrar seu boletim, notas e outros dados<br>
                     importantes sobre sua evolução acadêmica</h3>
                 <img src="../Images/Boletim.png" alt="Ícone de Boletim">
             </a>
+        </div>
+    </div>
+    <script src="./logout.js"></script>   
+    <script src="perfil.js"></script>
 
-        </div> <!-- Fim da caixa de botões de navegação -->
-    </div> <!-- Fim do corpo principal -->
 </body>
 
 </html>
