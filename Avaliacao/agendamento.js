@@ -64,6 +64,14 @@ function editarAgendamento(id) {
         .catch(error => console.error("Erro ao buscar dados para edição:", error));
 }
 
+function toggleLocalHorario() {
+    const fieldset = document.getElementById('alterar-local-horario');
+    if (fieldset.style.display === 'none') {
+        fieldset.style.display = 'block';
+    } else {
+        fieldset.style.display = 'none';
+    }
+}
 
 
 
@@ -191,3 +199,4 @@ document.getElementById('logoutButton').addEventListener('click', async () => {
         console.error('Erro de rede ao tentar fazer logout:', error);
     }
 });
+

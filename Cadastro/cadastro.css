@@ -15,8 +15,13 @@
 /* Estilos globais para o body */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71)); 
 }
+    img {
+        width: 50%;
+        height: auto;
+        display: flex;
+        margin-left: 370px;
+      }
 
 /* Caixa centralizada para o conteúdo */
 .box {
@@ -25,10 +30,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(182, 179, 179, 0.6); 
     padding: 15px;
     border-radius: 15px;
     width: 30%;
+    height: 590px;
 }
 
 /* Estilo do fieldset */

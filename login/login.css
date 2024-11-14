@@ -1,7 +1,30 @@
 /* Estilos globais para o body */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71)); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;   
+}
+
+img {
+    width: 50%;
+    height: auto;
+    display: flex;
+    margin-left: 370px;
+  }
+
+/* Animação de subida */
+@keyframes slideUp {
+    from {
+        transform: translate(-50%, 100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
 }
 
 /* Caixa centralizada para o conteúdo */
@@ -10,16 +33,25 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
-    background-color: rgba(0, 0, 0, 0.6); 
-    padding: 15px;
+    background-color: rgba(182, 179, 179, 0.6); 
+    padding: 10px;
     border-radius: 15px;
-    width: 30%;
+    width: 25%;
+    height: 50%;
+    opacity: 0;
+border: solid 0.1px black;
+}
+
+
+/* Classe para aplicar a animação de subida */
+.animate-box {
+    animation: slideUp 1s ease forwards; /* Animação de subida de 1 segundo */
 }
 
 /* Estilo do fieldset */
 fieldset {
     border: 3px solid dodgerblue; 
+    padding: 20px;
 }
 
 /* Estilo da legenda do fieldset */
@@ -59,7 +91,7 @@ legend {
 
 /* Animação do label ao focar ou ao digitar no campo */
 .inputUser:focus ~ .labelInput,
-.inputUser:valid ~ .labelInput {
+.inputUser:not(:placeholder-shown) ~ .labelInput {
     top: -20px; 
     font-size: 12px;
     color: dodgerblue; 

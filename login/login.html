@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Link para o arquivo CSS de estilo -->
     <link rel="stylesheet" href="login.css">
-
-    <!-- Título da página -->
     <title>Login - Agendamento de Prova</title>
 </head>
-
 <body>
-    <!-- Início do formulário de login -->
-    <div class="box">
-        <form action="">
+    <div class="container">
+        <img src="../Images/logo_user.png" alt=""> 
+    <div class="box animate-box">
+        <form id="loginForm">
             <fieldset>
                 <legend><b>Login</b></legend>
                 <br>
 
-                <!-- Campo de entrada para o email -->
                 <div class="inputBox">
-                    <input type="email" name="email" id="email" class="inputUser" required>
-                    <label for="email" class="labelInput">Email</label>
+                    <input type="email" name="email" id="email" class="inputUser" required autocomplete="off" placeholder="E-mail">
+                    <label for="email" class="labelInput"></label>
                 </div>
                 <br><br>
 
-                <!-- Campo de entrada para a senha -->
                 <div class="inputBox">
-                    <input type="password" name="senha" id="senha" class="inputUser" required>
-                    <label for="senha" class="labelInput">Senha</label>
+                    <input type="password" name="senha" id="senha" class="inputUser" required autocomplete="off" placeholder="Senha">
+                    <label for="senha" class="labelInput"></label>
                 </div>
                 <br><br>
 
-                <input type="submit" name="submit" id="submit" value="Entrar">
+                <input type="submit" value="Entrar" id="submit">
+                <p id="errorMessage" style="color: red; display: none;">Email ou senha incorretos.</p>
             </fieldset>
         </form>
 
-        <!-- Link para recuperação de senha -->
         <p><a href="#">Esqueceu a senha?</a></p>
-    </div> <!-- Fim da caixa do formulário -->
-</body>
+        <p><a href="../Cadastro/cadastro.html">Não tem uma conta? Cadastre-se</a></p>
+    </div>
+</div>
 
+    <script src="login.js"></script>
+</body>
 </html>

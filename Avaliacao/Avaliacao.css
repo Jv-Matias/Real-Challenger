@@ -17,71 +17,50 @@ body {
 /* Barra de Perfil */
 .barra-perfil {
     width: 100%;
-    height: 80px;
-    background: linear-gradient(145deg, #00a69c, #028080);
+    background-color: #f0f0f0;
     padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Foto do Perfil */
-.perfil-foto {
-    width: 60px;
-    height: 60px;
+.texto-perfil {  
+        font-size: 16px; 
+        color: #333; 
+        flex-grow: 1; 
+        text-align: left; 
+        margin-left: 20px;
+}
+
+.perfil {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #fff;
-    margin-right: 15px;
+    border: 2px solid black;
 }
 
-.perfil-foto img {
+.perfil img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.ra{
-    padding-right: 35cm;
-}
-
-/* Informações do Perfil */
-.perfil-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    
-}
-
-.perfil-info h2 {
-    font-size: 20px;
-    margin: 0;
-    color: #fff;
-    
-}
-
-.perfil-info p {
-    margin: 2px 0;
-    font-size: 14px;
-    color: #d9d9d9;
-   
-   
-}
 
 /* Botão de Sair */
 .sair {
-    display: flex;
-    align-items: center;
-    padding: 8px 15px;
-    border: 2px solid #fff;
-    background-color: transparent;
-    color: #000000;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    width: 80px;
+    height: 30px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: 2px solid black;
+    text-align: center;
+    padding: 5px; 
+    border-radius: 5px;
+    background-color: rgba(0, 150, 136, 1);
+    cursor: pointer; 
+    margin-right: 2cm; /* Move o botão 5 cm para a esquerda */
 }
 
 .sair:hover {
@@ -92,6 +71,12 @@ body {
     width: 20px;
     height: 20px;
     margin-left: 5px;
+}
+
+.ra{
+    width: 100%;
+    background-color: #f0f0f0;
+    margin-left: 10px;
 }
 
 
@@ -150,17 +135,28 @@ body {
 /* Área de Conteúdo */
 .main-container {
     width: 85%;
-    /* Remover altura fixa */
+   margin-left: 70px;
     min-height: 100%;
     padding: 20px;
     overflow: visible;
 }
 
+fieldset{
+    width: 1070px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    text-align: center;
+}
+
+#alterar-local-horario {
+    display: none;
+}
+
+
 /* Estilo geral para o cartão de prova */
 .provas {
     width: 90%; /* Aumentado para dar mais destaque */
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     background: linear-gradient(145deg, #e0ffe6, #c3ffd1); /* Gradiente suave */
@@ -184,11 +180,14 @@ body {
     border-radius: 8px;
     margin-right: 25px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para a imagem */
-    transition: transform 0.3s ease;
 }
 
-.provas img:hover {
-    transform: rotate(-3deg) scale(1.1); /* Efeito de leve rotação e zoom no hover */
+
+
+.schedule input{
+    border-radius: 10px;
+    padding: 1px;
+    text-align: center;   
 }
 
 /* Informações da Prova */
@@ -438,27 +437,21 @@ body {
     text-decoration: none;
 }
 
-
-.sair {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 8px;
-    background-color: #f0f0f0;
-    border: none;
-    cursor: pointer;
+.esconder{
+    background-color: rgba(210, 255, 220, 0.9);
     display: flex;
     align-items: center;
-    gap: 5px;
-}
-
-.sair img {
-    width: 20px;
-    height: 20px;
-}
-
-.sair:hover {
-    background-color: #e0e0e0;
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: rgba(34, 34, 34, 1);
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
 }
 
 

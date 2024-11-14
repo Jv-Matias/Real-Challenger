@@ -3,6 +3,7 @@ body {
     padding: 0;
     height: 100vh;
     font-family: Arial, sans-serif; /* Adiciona uma fonte padrão e clean */
+    background-color: rgba(245, 245, 245, 1);
 }
 
 
@@ -49,7 +50,8 @@ body {
     border: 2px solid black;
     text-align: center;
     padding: 5px; 
-    background-color: #f0f0f0; 
+    border-radius: 5px;
+    background-color: rgba(0, 150, 136, 1);
     cursor: pointer; 
     margin-right: 2cm; /* Move o botão 5 cm para a esquerda */
 }
@@ -82,13 +84,15 @@ body {
     width: 260px;
     height: auto;
     padding: 20px;
+    margin-top: 100px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    background-color: #bde0fe;
+    background-color: rgba(210, 255, 220, 0.9);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -105,13 +109,13 @@ body {
 
 .Botao h2 {
     font-size: 20px;
-    color: #333;
+    color: rgba(0, 50, 60, 1);
     margin-bottom: 10px;
 }
 
 .Botao h3 {
     font-size: 14px;
-    color: #555;
+    color: rgba(34, 34, 34, 1);
     line-height: 1.5;
 }
 
