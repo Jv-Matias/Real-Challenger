@@ -1,0 +1,182 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+/* Barra de perfil */
+.barra-perfil {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.texto-perfil {  
+    font-size: 16px; 
+    color: #333; 
+    flex-grow: 1; 
+    text-align: left; 
+    margin-left: 20px;
+}
+
+.perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.sair {
+    width: 80px;
+    height: 30px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: none;
+    text-align: center;
+    padding: 5px; 
+    border-radius: 5px;
+    background-color: #00a69c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer; 
+    margin-right: 2cm;
+}
+
+.sair:hover {
+    background-color: #009688;
+}
+
+.sair img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+/* Formulário de administração */
+#adminForm {
+    margin-top: 20px;
+}
+
+/* Ajuste de largura para cada tipo de campo */
+.inputGroup {
+    flex-direction: column;
+    margin-bottom: 15px; 
+    justify-content: space-between;
+}
+
+
+.inputGroup button {
+    margin-left: 10px;
+    background-color: #00a69c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inputGroup button:hover {
+    background-color: #008577;
+}
+
+.inputGroup label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#alunoID {
+    width: 50%; 
+}
+
+#local {
+    width: 60%; 
+}
+
+#data {
+    width: 40%; 
+}
+
+#hora {
+    width: 30%; 
+}
+
+#vagas {
+    width: 20%; 
+}
+
+/* Ajuste de estilo para os campos */
+input[type="text"], input[type="date"], input[type="time"], select, input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="time"]:focus, select:focus, input[type="number"]:focus {
+    border-color: #00a69c;
+    outline: none;
+}
+
+#submit {
+    background-color: #35da4b;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    align-self: center;
+}
+
+#submit:hover {
+    background-color: #2bc63e;
+}
+
+fieldset {
+    width: 60%;
+    margin: 20px auto;
+    border: 1px solid #d0e8d8;
+    padding: 20px;
+    background-color: #e8fff2;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+fieldset #submit{
+    margin-left: 40%;
+}
+
+legend {
+    color: #00695c;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
