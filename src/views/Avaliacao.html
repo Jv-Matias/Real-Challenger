@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaliação</title>
-    <link rel="stylesheet" href="Avaliacao.css">
+    <link rel="stylesheet" href="../public/css/Avaliacao.css">
 </head>
 
 <body>
     <div class="barra-perfil">
         <div class="perfil">
-            <img src="/Images/perfil.png" alt="Perfil do Aluno">
+            <img src="../Images/perfil.png" alt="Perfil do Aluno">
         </div>
 
         <div class="ra">
@@ -40,7 +40,7 @@
 
         <div class="main-container">
             <div class="provas">
-                <img src="/Images/pngtree-artificial-intelligence-robot-technology-transparent-background-png-image_9068338.png"
+                <img src="../Images/pngtree-artificial-intelligence-robot-technology-transparent-background-png-image_9068338.png"
                     alt="Imagem IA">
                 <div class="info">
                     <h3>IA - MACHINE LEARNING - CONSTRUINDO APLICAÇÕES COM INTELIGÊNCIA ARTIFICIAL</h3>
@@ -62,6 +62,16 @@
                                 <option value="petropolis">Petrópolis</option>
                                 <option value="valenca">Valença</option>
                             </select>
+                            
+                            <label for="sala"><strong>Sala:</strong></label>
+                            <select id="sala" name="sala" class="form-select" required>
+                                <option value="salaA">Sala A</A></option>
+                                <option value="salaB">Sala B</option>
+                                <option value="salaC">Sala C</option>
+                            </select>
+
+                            <label for="vagasIa"> <strong>Vagas Restantes:</strong></label>
+                        <input type="number" id="vagas" name="vagas" value="5" readonly>
 
                             <div class="reminders">
                                 <label><input type="checkbox" id="lembrarEmail" name="lembrarEmail"> Lembrar por
@@ -82,21 +92,21 @@
 
             <div id="editModal" class="modal">
                 <div class="modal-content">
-                    <span class="close" onclick="closeModal()">&times;</span>
                     <div class="modal-header">
                         <h2>Editar Agendamento</h2>
+                        <span class="close" onclick="closeModal()">&times;</span>
                     </div>
                     <div class="modal-body">
                         <form id="editForm">
                             <label for="editTitulo">Título:</label>
                             <input type="text" id="editTitulo" name="titulo" required><br>
-
+            
                             <label for="editData">Data:</label>
                             <input type="date" id="editData" name="data" required><br>
-
+            
                             <label for="editHorario">Horário:</label>
                             <input type="time" id="editHorario" name="horario" required><br>
-
+            
                             <label for="editLocal">Local:</label>
                             <select id="editLocal" name="local" required>
                                 <option value="barra-pirai">Barra Do Piraí</option>
@@ -104,8 +114,11 @@
                                 <option value="petropolis">Petrópolis</option>
                                 <option value="valenca">Valença</option>
                             </select>
-
-                            <button type="button" onclick="saveEdits()">Salvar</button>
+            
+                            <div class="modal-footer">
+                                <button type="button" onclick="saveEdits()">Salvar</button>
+                                <button type="button" onclick="closeModal()">Cancelar</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -123,7 +136,7 @@
 
     <script src="perfil.js"></script>
 
-    <script src="agendamento.js"></script>
+    <script src="../controllers/agendamento.js"></script>
     <script src="logout.js"></script>
 </body>
 

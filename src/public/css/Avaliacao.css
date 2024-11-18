@@ -2,7 +2,7 @@
 html,
 body {
     height: 100%;
-    /* Remover overflow: hidden; */
+ overflow: hidden;
     margin: 0;
     padding: 0;
     overflow: auto; /* Permite rolagem global */
@@ -93,6 +93,7 @@ body {
 .barra-lateral {
     background-color: #00a69c;
     width: 15%;
+    height: 100%;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
@@ -139,6 +140,11 @@ body {
     min-height: 100%;
     padding: 20px;
     overflow: visible;
+}
+
+select{
+    border-radius: 10px;
+    padding: 1px;
 }
 
 fieldset{
