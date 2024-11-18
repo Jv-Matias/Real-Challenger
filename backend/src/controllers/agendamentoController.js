@@ -1,5 +1,5 @@
 // controllers/agendamentoController.js
-const db = require('../config/db');
+const db = require('../../backend/src/config/db');
 
 exports.create = async (req, res) => {
     const { titulo, data, horario, local, lembrarEmail, lembrarSms } = req.body;

@@ -4,6 +4,7 @@ body {
     height: 100vh;
     font-family: Arial, sans-serif; /* Adiciona uma fonte padrão e clean */
     background-color: rgba(245, 245, 245, 1);
+    overflow: hidden;
 }
 
 

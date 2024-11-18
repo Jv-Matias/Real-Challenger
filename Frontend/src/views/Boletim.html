@@ -20,12 +20,12 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="./Boletim.css">
+    <link rel="stylesheet" href=".././public/Boletim.css">
 </head>
 <body>
   <div class="barra-perfil">
     <div class="perfil">
-        <img src="/Images/perfil.png" alt="Perfil do Aluno">
+        <img src=".././Images/perfil.png" alt="Perfil do Aluno">
     </div>
     <div class="texto-perfil">
         Aluno: Joao Vitor <br> RA: e3000b
@@ -37,16 +37,20 @@
     </button>
 </div>
 
-    <div class="corpo-principal">
-        <div class="barra-lateral">
-            <ul>
-                <li><a href=".././Home/home.html"><img src="../Images/Home-PNG-Image.png" alt="Inicio">Inicio</a></li>
-                <li><a href="../Contatos/Contatos.html"><img src=".././Images/phone.png" alt="Contatos"> Contatos</a></li>
-                <li><a href="../Boletim/Boletim.html"><img src=".././Images/Boletim.png" alt="Boletim"> Boletim</a></li>
-                <li><a href="../Avaliacao/Avaliacao.html"><img src=".././Images/layers.png" alt="Avaliação"> Avaliação</a></li>
-                
-            </ul>
-        </div>
+<div class="corpo-principal">
+  <div class="barra-lateral">
+      <ul>
+          <li><a href="../views/home.html" title="Início"><img src="../images/Home-PNG-Image.png" alt="Início">
+                  Início</a></li>
+          <li><a href="../views/Contatos.html" title="Contatos"><img src="../images/phone.png" alt="Contatos">
+                  Contatos</a></li>
+          <li><a href="../views/Boletim.html" title="Boletim"><img src="../images/Boletim.png" alt="Boletim">
+                  Boletim</a></li>
+          <li><a href="../views/Avaliacao.html" title="Avaliação"><img src="../images/layers.png"
+                      alt="Avaliação"> Avaliação</a></li>
+      </ul>
+  </div>
+
  
         <!-- Tabela -->
         <div class="table-container">
@@ -79,7 +83,7 @@
               </tbody>
             </table>
           </div>     
-          <script src="logout.js"></script>
+          <script src="../../../backend/src/public/logout.js"></script>
 
 </body>
 </html>
