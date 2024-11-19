@@ -35,27 +35,31 @@ body {
 }
 
 .sair {
-    width: 70px;
+    width: 80px;
     height: 30px;
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    border: 2px solid black;
+    border: none;
     text-align: center;
     padding: 5px; 
     border-radius: 5px;
-    background-color: rgba(0, 150, 136, 1);
+    background-color: #00a69c;
+    color: white;
+    font-weight: bold;
     cursor: pointer; 
-    margin-right: 2cm; /* Move o botão 5 cm para a esquerda */
+    margin-right: 2cm;
 }
 
+.sair:hover {
+    background-color: #009688;
+}
 
- .sair img{
-    width: 30%;
-    height: 100%;
-    object-fit: cover;
-    margin-left: 3px;
- }
+.sair img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
 
 
 .perfil img {

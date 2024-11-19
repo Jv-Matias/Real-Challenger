@@ -8,7 +8,7 @@ function enviarAgendamento() {
     const lembrarSms = document.getElementById("lembrarSms").checked ? 1 : 0;
 
     if (!titulo || !data || !horario || !local) {
-        alert("Por favor, preencha todos os campos.");
+        MostrarModal()
         return;
     }
 
@@ -24,7 +24,7 @@ function enviarAgendamento() {
     .then(data => {
         console.log("Resposta do servidor ao criar agendamento:", data);
         if (data.success) {
-            alert("Agendamento criado com sucesso!");
+           MostrarModal2();
             fetchAgendamentos();
         } else {
             alert("Erro ao criar agendamento.");
@@ -200,3 +200,22 @@ document.getElementById('logoutButton').addEventListener('click', async () => {
     }
 });
 
+function MostrarModal() {
+    Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: 'Preencha Todos os Campos!!',
+        showConfirmButton: false,
+        timer: 2500
+    });
+}
+
+function MostrarModal2() {
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Preencha Todos os Campos!!',
+        showConfirmButton: false,
+        timer: 2500
+    });
+}
